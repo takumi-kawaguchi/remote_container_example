@@ -1,0 +1,16 @@
+{
+    "name": "go_test",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "web",
+    "workspaceFolder": "../go/src/go_test",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.tabSize": 4,
+        "go.useLanguageServer": true
+    },
+    "extensions": [
+        "golang.go"
+    ]
+}

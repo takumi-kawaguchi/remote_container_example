@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    web:
+        build: .
+        ports:
+            - "11324:1324"
+        volumes: 
+            - .:/go/src/go_test/
+        working_dir: /go/src/
+        restart: always
+        command: sleep infinity
+        container_name: go_test_container
